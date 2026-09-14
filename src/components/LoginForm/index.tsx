@@ -4,9 +4,10 @@ import { useNavigate } from "react-router";
 import axios from "axios";
 
 import Modal from "../Modal";
-// import RegisterUser from "../RegisterUser";
+
 
 import type { User } from "../../types/user";
+import RegisterUser from "../RegisterUser";
 
 const LoginForm = () => {
   const [email, setEmail] = useState("");
@@ -143,8 +144,8 @@ const LoginForm = () => {
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
       >
-        <h1>Conteudo</h1>
-        {/* <RegisterUser /> */}
+       
+        <RegisterUser/>
       </Modal>
     </div>
   );
